@@ -4,10 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Para gre</title>
+  <link rel="stylesheet" href="style.css">
 
 <style>
+.flowers-background{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:0;
+overflow:hidden;
+}
 
+.lockbox{
+position:relative;
+z-index:2;
+}
 body{
+  
 margin:0;
 font-family:Arial;
 color:white;
@@ -144,8 +159,36 @@ animation:fall linear infinite;
 
 </div>
 
+
 <div id="screen2" class="screen">
 
+<!-- FLORES DE FONDO -->
+<div class="flowers-background">
+<div class="flowers">
+
+<!-- AQUÍ PEGA TODO TU CÓDIGO DE FLORES -->
+
+</div>
+</div>
+
+<!-- CANDADO ENCIMA -->
+<div class="lockbox">
+
+<div id="lock" class="lock">🔒</div>
+
+<h3>pon tu cumpleaños</h3>
+
+<input id="birthday" placeholder="15/03/2007">
+
+<br>
+
+<button onclick="checkBirthday()">Abrir</button>
+
+<p id="error"></p>
+
+</div>
+
+</div>
 <div class="garden">
 
 <img class="flower" src="https://upload.wikimedia.org/wikipedia/commons/4/40/Sunflower_sky_backdrop.jpg">
@@ -264,6 +307,6 @@ m.appendChild(d)
 }
 
 </script>
-
+<script src="main.js"></script>
 </body>
   </html>
